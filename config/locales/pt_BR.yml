@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    model:
+      user: 'Usuário'
+      
+    attributes:
+      default: &default
+        created_ate: 'Criado em'
+          update_at: 'Atualizado em'
+
+          post:
+          <<: *default
+          description: 'Descrição'
+          photo: 'Foto'
+
+          user:
+          <<: *default
+
+          name: 'Nome'
+          email: 'Email'
+          passsword: 'Senha'
+          password_confirmation: 'Senha (confirmação)'
